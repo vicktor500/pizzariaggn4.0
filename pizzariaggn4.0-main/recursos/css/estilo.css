@@ -1,0 +1,292 @@
+*{
+	border: 0;
+	padding: 0;
+	margin: 0;
+	
+}
+#header{
+background-color: red;
+z-index: 1;
+margin-bottom:20px;
+}
+#h1-header{
+	color: #fff;
+	font-size: arial;
+	padding-left: 8px;
+	padding-top: 4px;
+	padding-bottom: 8px;
+}
+.h3-header{
+	color: #fff;
+	font-size: arial;
+	padding-left: 8px;
+	padding-top: 5px;
+	padding-bottom: 2px;
+}
+.link-cabecalho{
+	text-decoration: none;
+	color: white;
+	word-spacing: 25px;
+	font-size: 17spx;
+	font-family: arial;
+}
+
+#navegação{
+	text-align: right;
+	padding-right: 7px;
+	color:#fff ;
+}
+
+#navegação img{
+	position: relative;
+	width: 60px;
+	border-radius: 50%;
+  }
+
+.promocao{
+	color: #fff;
+	background-color: red;
+	margin: 0 auto;
+	text-align: center;
+	width: 90%;
+	height: 100px;
+	border-radius: 50px;
+	font-family: arial;
+	font-size: 20px;
+	padding-top: 30px;
+}
+#produto {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	
+}
+#produto .sabores{
+	margin: 10px;
+	border: 2px solid red;
+	border-radius: 25px;
+	text-align: center;
+	background-color: red;
+	font-size: 20px;
+	color: #fff;
+}	
+	
+	
+
+#cabecalho {
+	position:relative;
+	background: linear-grandient(to right,#c72992,#6c14d0);
+	background-clip: text;
+	/*-webkit-text-fill-color: transparent;
+}*/
+
+input{
+	display: block;
+	margin: 10px;
+	padding: 10px;
+	color: #b3b3b3;
+    width: 200px;
+    border-radius: 10px;	
+}
+label{
+	font-size: 20px;
+}
+
+	
+}
+#produto .sabores p{
+	font-size: 125% ; 
+}
+#produto .sabores img{
+	width: 260px;
+	border-radius: 25px;
+	
+	
+}
+#produto .sabores button{
+	font-size:20px;
+	padding:15px;
+	margin:15px;
+	border-radius:10px;
+	color:white;
+	background:#801828;
+}
+.link-cabecalho{
+	font-weight:bold;
+	font-family:arial;
+	
+}
+.link-cabecalho:hover{
+	color:yellow;
+	transition:all ease-in-out 3ms;
+}
+
+/* Container principal para checkout */
+.checkout-container {
+    display: flex;
+    justify-content: space-between; /* Garante que os itens ocupem espaço entre si */
+    gap: 20px; /* Espaço entre o formulário e a lista de itens */
+    margin-top: 20px;
+}
+
+/* Estilo para a seção de itens do carrinho */
+.cart-items {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 20px;
+    max-width: 40%; /* Largura máxima para os itens do carrinho */
+}
+
+/* Estilo para a seção do formulário */
+.checkout-form {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 20px;
+    max-width: 50%; /* Largura máxima para o formulário */
+}
+
+/* Estilo para o campo de mensagens de erro */
+#erroMensagem {
+    color: red;
+    margin-top: 10px;
+}
+.endereco-entrega{
+    color: black;
+	font-size: arial;
+	padding: 20px;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+
+.endereco-entrega h2{
+	text-align: center;
+}
+
+.endereco-entrega img {
+    width: 30%;
+    position: relative;
+    left: 35%;
+}
+ 
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button{
+	text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+
+.cart-dropdown {
+    display: none; /* Inicialmente escondido */
+	position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    z-index: 10;
+    width: 500px; 
+    max-width: 90%;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+	border: 3px, rgb(80, 80, 80);
+}
+
+.cart-dropdown.show {
+    display: block; /* Exibe o menu quando a classe show é aplicada */
+}
+
+.cart-dropdown h3 {
+    margin-top: 0;
+}
+
+.cart-dropdown button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.cart-dropdown button:hover {
+    background-color: #45a049;
+}
+
+
+.cart-dropdown {
+	color: black;
+	border: 2px solid rgb(80, 80, 80);
+	text-align: center;
+}
+
+
+button {
+    border: none;
+    background: none;
+    color: red;
+    cursor: pointer;
+    padding: 0; /* Remove o preenchimento */
+}
+
+button:hover {
+    color: darkred; /* Muda a cor ao passar o mouse */
+}
+
+button img {
+    width: 10px; /* Define a largura do ícone */
+    height: 20px; /* Define a altura do ícone */
+	border-radius: 50%;
+}
+
+
+
+.produto {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    margin: 15px;
+    padding: 15px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

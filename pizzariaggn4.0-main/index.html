@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang='pt-br'>
+   <head>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+	   <meta charset='utf-8'>
+	   <title> Pizzaria Tal </title>
+	   <link rel='stylesheet' type= 'text/css' href='recursos/css/estilo.css'>
+	 
+   </head>
+   
+   <body>
+       <header id='header'>
+	        <h1 id='h1-header'> Pizzaria GGN </h1>
+			<h3 class='h3-header'>A Melhor Pizzaria da Cidade</h3>
+			
+			<nav id='navegação'>
+				<a class='link-cabecalho' href='index.html'> home </a>
+				<a class='link-cabecalho' href='pizzas.html'> Pizzas </a>
+				<a class='link-cabecalho' href='bebidas.html'> Bebidas </a>
+				 <img src="recursos/imagens/carrinho.png" alt="Carrinho" onclick="toggleCart()" >
+ 
+				 <!---lista de itens no carrinho-->
+ 
+				<div id="cartDropdown" class="cart-dropdown">
+				 <h3>Seu Carrinho</h3>
+				 <div id="cartItemsList"></div>
+				 <button onclick="window.location.href='endereco.html'">Finalizar Compra</button>
+ 				</div>
+			</nav>
+	   </header>
+	      <section class='promocao'>
+	        <h2> Promoções </h2>
+			<p> De Segunda a Sexta Rodizio de Pizzas Por $45,00.  <p>
+			<p> Aproveite Com a Familha Essa Oferta. </p>
+	   </section>
+	   
+	   <br>
+	   <br>
+	   <br>
+	    <section id="produto">
+<div class="sabores">		
+		<img src="recursos/imagens/PP.jpg">
+		<p> pizza portuguesa </p>
+		<p> 45,00 Reais </p>
+		<button type="button">promocoe</button>
+</div>	
+<div class="sabores">		
+		<img src="recursos/imagens/cal.jpeg">
+		<p> pizza de calabresa</p>
+		<p> 45,00 Reais </p>
+		<button type="button">promocoes</button>
+</div>
+<div class="sabores">		
+		<img src="recursos/imagens/FP.jpg">
+		<p> pizza de frango<p>
+         <p>com catupiry </p>
+		<p> 45,00 Reais </p>
+		
+		<button type="button">promocoes</button>
+</div>
+<div class="sabores">		
+		<img src="recursos/imagens/min.jpeg">
+		<p> pizza mini </p>
+		<p> 45,00 Reais </p>
+		<button type="button">promocoes</button>
+</div>
+
+		</section>
+
+	   
+		<script type="text/javascript" src='recursos/js/script.js'></script>
+	</body>
+   
+</html>

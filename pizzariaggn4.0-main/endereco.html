@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang='pt-br'>
+   <head>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+	   <meta charset='utf-8'>
+	   <title> Pizzaria Tal </title>
+	   <link rel='stylesheet' type= 'text/css' href='recursos/css/estilo.css'>
+	 
+   </head>
+   
+   <body>
+       <header id='header'>
+	        <h1 id='h1-header'> Pizzaria GGN </h1>
+			<h3 class='h3-header'>A Melhor Pizzaria da Cidade</h3>
+			
+			<nav id='navegação'>
+				<a class='link-cabecalho' href='index.html'> home </a>
+				<a class='link-cabecalho' href='pizzas.html'> Pizzas </a>
+				<a class='link-cabecalho' href='bebidas.html'> Bebidas </a>
+				 <img src="recursos/imagens/carrinho.png" alt="Carrinho" onclick="toggleCart()" >
+			</nav>
+	   </header>
+	   <header>
+        <h1>Finalizar Pedido</h1>
+    </header>
+
+    <main>
+        <!-- Criação de um container que vai conter o formulário e a lista de itens -->
+        <div class="checkout-container">
+            <!-- Lista de itens do carrinho -->
+            <div class="cart-items">
+                <h2>Itens no seu carrinho:</h2>
+                <div id="cartItemsCheckout"></div>
+            </div>
+
+            <!-- Formulário de finalização de pedido -->
+            <div class="checkout-form">
+                <h2>Informações de Entrega:</h2>
+                <form action="processar_pedido.php" method="POST" id="pedidoForm">
+					<div class="form-group">
+						<label for="nome">Nome Completo:</label>
+						<input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+					</div>
+				
+					<div class="form-group">
+						<label for="telefone">Telefone:</label>
+						<input type="tel" id="telefone" name="telefone" required placeholder="(99) 99999-9999" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}">
+					</div>
+				
+					<div class="form-group">
+						<label for="endereco">Endereço para Entrega:</label>
+						<input type="text" id="endereco" name="endereco" required placeholder="Rua, Número, Bairro">
+					</div>
+				
+					<div class="form-group">
+						<label for="cep">CEP:</label>
+						<input type="text" id="cep" name="cep" required placeholder="00000-000" pattern="[0-9]{5}-[0-9]{3}">
+					</div>
+				
+					<div class="form-group">
+						<label for="observacoes">Observações (opcional):</label>
+						<textarea id="observacoes" name="observacoes" placeholder="Instruções especiais (opcional)"></textarea>
+					</div>
+				
+					<div class="form-group">
+						<label for="forma_pagamento">Forma de Pagamento:</label>
+						<select id="forma_pagamento" name="forma_pagamento" required>
+							<option value="">Selecione</option>
+							<option value="cartao">Cartão de Crédito</option>
+							<option value="dinheiro">Dinheiro</option>
+							<option value="pix">PIX</option>
+						</select>
+					</div>
+
+                <!-- Local para exibir mensagens de erro -->
+                <div id="erroMensagem" style="color: red;"></div>
+            </div>
+        </div>
+    </main>
+			
+			<script type="text/javascript" src='recursos/js/script.js'></script>
+			<script type="text/javascript" src='recursos/js/valida_forms.js'></script>			
+	      </section>
+   </body>
+   
+</html>
+	

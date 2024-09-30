@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang='pt-br'>
+   <head>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+	   <meta charset='utf-8'>
+	   <title> BEBIDAS </title>
+	   <link rel='stylesheet' type= 'text/css' href='recursos/css/estilo.css'>
+	 
+   </head>
+   
+   <body>
+       <header id='header'>
+	        <h1 id='h1-header'></h1>
+			<h3 class='h3-header'>PARA REFRESCAR SEU DIA</h3>
+			
+			<nav id='navegação'>
+				<a class='link-cabecalho' href='index.html'> home </a>
+				<a class='link-cabecalho' href='pizzas.html'> Pizzas </a>
+				<a class='link-cabecalho' href='bebidas.html'> Bebidas </a>
+				 <img src="recursos/imagens/carrinho.png" alt="Carrinho" onclick="toggleCart()" >
+ 
+				 <!---lista de itens no carrinho-->
+ 
+				<div id="cartDropdown" class="cart-dropdown">
+				 <h3>Seu Carrinho</h3>
+				 <div id="cartItemsList"></div>
+				 <button onclick="window.location.href='endereco.html'">Finalizar Compra</button>
+ 				</div>
+			</nav>
+	   </header>
+	      
+	   
+	   <br>
+	   <br>
+	   <br>
+	    <section id="produto">
+<div class="sabores">		
+		<img src="recursos/imagens/cc.jpeg">
+		<p> COCA LATA </p>
+		<p> 5,00 </p>
+		<button onclick="addToCart({name: 'COCA LATA', price: 5.00})">Comprar</button>
+</div>	
+<div class="sabores">		
+		<img src="recursos/imagens/FT.jpeg">
+		<p> FANTA </p>
+		<p> 10,00 Reais </p>
+		<button onclick="addToCart({name: 'FANTA', price: 10.00})">Comprar</button>
+</div>
+<div class="sabores">		
+		<img src="recursos/imagens/fu.jpeg">
+		<p> FANTA UVA </p>
+		<p> 10,00 Reais </p>
+		<button onclick="addToCart({name: 'FANTA UVA', price: 10.00})">Comprar</button>
+</div>
+<div class="sabores">		
+		<img src="recursos/imagens/ag.jpeg">
+		<p> agua </p>
+		<p> 3,00 Reais </p>
+		<button onclick="addToCart({name: 'agua', price: 3.00})">Comprar</button>
+</div>
+<div class="sabores">		
+		<img src="recursos/imagens/sl.jpeg">
+		<p> SUCO DE LRANJA </p>
+		<p> 10,00 Reais </p>
+		<button onclick="addToCart({name: 'SUCO DE LRANJA', price: 10.00})">Comprar</button>
+</div>
+<div class="sabores">		
+		<img src="recursos/imagens/sm.jpeg">
+		<p> SUCO DE LIMAO </p>
+		<p> 5,00 Reais </p>
+		<button onclick="addToCart({name: 'SUCO DE LIMAO', price: 5.00})">Comprar</button>
+</div>
+<div class="sabores">		
+		<img src="recursos/imagens/mr.jpeg">
+		<p> SUCO DE MARACUJA </p>
+		<p> 10,00 Reais </p>
+		<button onclick="addToCart({name: 'SUCO DE MARACUJA', price: 10.00})">Comprar</button>
+
+</div>		
+		</section>
+
+	   
+	 <script type="text/javascript" src='recursos/js/script.js'></script>
+   </body>
+   
+</html>
+	
